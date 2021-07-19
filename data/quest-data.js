@@ -1,15 +1,14 @@
 
 const witch = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
+    id: 'witch',
+    title: 'A Coven of Witches',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'witch.jpeg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        You have stumbled into the witches quarters.
     `,
     choices: [{
         id: 'negotiate',
@@ -51,7 +50,7 @@ const mermaid = {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: 'dragon.jpeg',
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
@@ -62,7 +61,7 @@ const mermaid = {
     `,
     choices: [{
         id: 'run',
-        description: 'Get the hell out of the village',
+        description: 'run and hope they spare you',
         result: `
             You high tail it in the opposite direction. Luckily,
             in the panic you find a bag on the ground with 15 gold.
