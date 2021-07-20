@@ -47,19 +47,18 @@ const mermaid = {
     },
     image: 'mermaid.jpeg',
     description: `
-        you took a deep breath and jumped into the depths of the ocean. as you're swimming you find yourself in a reef but not just any reef......this ones occupied. 
+        you took a deep breath and jumped into the depths of the ocean. 
+        as you're swimming you find yourself in a reef but not just any reef......this ones occupied. 
     `,
     choices: [{
-        id: 'run',
-        description: 'run and hope they spare you',
+        id: 'swim',
+        description: 'get your arms flapping and swim the heck out of THURRRRRR',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 jewels.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            you start swimming as fast as you can and you get caught in a net! you are trapped and feel doomed until a swordfish accidently 
+            swims into your net and cuts you up an opening before swimming away. PHEW! This cost your MINUS 5 HP but you gained 20 jewels!
         `,
-        hp: -35,
-        jewels: 15
+        hp: -5,
+        jewels: 20
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
