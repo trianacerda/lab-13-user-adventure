@@ -48,9 +48,7 @@ const mermaid = {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpeg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
+    image: 'mermaid.jpeg',
     description: `
         You run to a nearby village you have heard is being
         terrorized by a dragon. Sure enough as you rent a room
