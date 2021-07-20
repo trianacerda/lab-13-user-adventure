@@ -1,5 +1,5 @@
 import quests from '../data/quest-data.js';
-import findById from '../data/findById.js';
+import { findById } from '../data/findById.js';
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -28,6 +28,5 @@ for (let choice of quest.choice){
     label.append(radio, span);
 
     choices.append(label);
-
 
 }
