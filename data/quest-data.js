@@ -1,29 +1,26 @@
 
 const witch = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
+    id: 'witch',
+    title: 'A Coven of Witches',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'witch.jpeg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        You have stumbled upon the witches quarters.
     `,
     choices: [{
-        id: 'negotiate',
-        description: 'Negotiate with them',
+        id: 'sell',
+        description: 'sell them something they may want',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            you weren't a convincing enought!! And now they turned you into a toad! That cost you -15 HP and NO jewels gained!
         `,
-        hp: 0,
-        gold: 35
+        hp: -15,
+        jewels: 0
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'spell',
+        description: 'cast a spell that you just learned',
         result: `
             Brandishing your sword you let out a warrior's cry and charge into the monsters
             hacking and slashing. Before long you stand panting gazing across the bodies of
@@ -34,7 +31,7 @@ const witch = {
         gold: 50
     }, {
         id: 'run',
-        description: 'Run away like good Sir Robin',
+        description: 'just book it out of there',
         result: `
             As you make a dash for the door a giant spider descends and take a bite of flesh,
             causing 50 hp damage.
@@ -45,13 +42,13 @@ const witch = {
 };
 
 const mermaid = {
-    id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
+    id: 'mermaid',
+    title: 'A Mermaids Reef',
     map: {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: 'dragon.jpeg',
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
@@ -62,7 +59,7 @@ const mermaid = {
     `,
     choices: [{
         id: 'run',
-        description: 'Get the hell out of the village',
+        description: 'run and hope they spare you',
         result: `
             You high tail it in the opposite direction. Luckily,
             in the panic you find a bag on the ground with 15 gold.
@@ -100,14 +97,14 @@ const mermaid = {
 };
 
 const genie = {
-    id: 'treasure',
-    title: 'A Golden Treasure',
+    id: 'genie',
+    title: 'A Genies Bottle',
     map: {
         top: '31%',
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    image: 'genie.jpeg',
     audio: 'treasure-chests.wav',
     action: 'chest-opening.wav',
     description: `
