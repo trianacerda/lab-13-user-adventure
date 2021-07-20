@@ -8,13 +8,13 @@ const witch = {
     },
     image: 'witch.jpeg',
     description: `
-        You have stumbled upon the witches quarters.
+        you have messed around with a little too much magic and have stumbled upon the witches quarters. these witches are nothing to mess with....make a choice...
     `,
     choices: [{
         id: 'sell',
         description: 'sell them something they may want',
         result: `
-            you weren't a convincing enought!! And now they turned you into a toad! That cost you -15 HP and NO jewels gained!
+            you weren't a convincing enough!! And now they turned you into a toad! That cost you MINUS 15 HP and NO jewels gained!
         `,
         hp: -15,
         jewels: 0
@@ -22,22 +22,19 @@ const witch = {
         id: 'spell',
         description: 'cast a spell that you just learned',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+            you cast a spell that you were not convinced it would work.....BUT IT DID! You froze the witches for a short time and got away with their spell book! 
+            PLUS 30 HP and 50 jewels!
         `,
-        hp: -30,
-        gold: 50
+        hp: +30,
+        jewels: 50
     }, {
         id: 'run',
-        description: 'just book it out of there',
+        description: 'just act like you forgot something and say, "hey what is THAT" and RUN!!!!!',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            you scurry away and as you think you're in the clear you trip over your shoelace.......BOOM you hit the ground and the witches snatch you up! Down 50 HP and NO jewels!.
         `,
         hp: -50,
-        gold: 0
+        jewels: 0
     }]
 };
 
@@ -50,22 +47,19 @@ const mermaid = {
     },
     image: 'mermaid.jpeg',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        you took a deep breath and jumped into the depths of the ocean. as you're swimming you find yourself in a reef but not just any reef......this ones occupied. 
     `,
     choices: [{
         id: 'run',
         description: 'run and hope they spare you',
         result: `
             You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
+            in the panic you find a bag on the ground with 15 jewels.
             Unluckily, you trip over a discarded wagon wheel on your
             way out of town and take 40 hp damage. 
         `,
         hp: -35,
-        gold: 15
+        jewels: 15
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
@@ -76,7 +70,7 @@ const mermaid = {
             Oh, and you take 45 hp damage.
         `,
         hp: -45,
-        gold: 0
+        jewels: 0
     }, {
         id: 'archer',
         description: 'Emulate that guy from LOR who shot an arrow',
@@ -87,10 +81,10 @@ const mermaid = {
             next pass you steady your aim and let one fly. Amazingly,
             you strike the dragon in the eye, piercing into the brain and
             killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
+            and award you 90 jewels.
         `,
         hp: 0,
-        gold: 90
+        jewels: 90
     }]
 };
 
@@ -115,21 +109,21 @@ const genie = {
     choices: [{
         id: 'wooden',
         description: 'A Wooden Chest',
-        result: 'You grab 40 gold pieces!',
+        result: 'You grab 40 jewels pieces!',
         hp: 0,
-        gold: 40
+        jewels: 40
     }, {
-        id: 'golden',
-        description: 'A Golden Chest',
+        id: 'jewelsen',
+        description: 'A jewelsen Chest',
         result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
         hp: -50,
-        gold: 0
+        jewels: 0
     }, {
         id: 'jeweled',
         description: 'A Jeweled Chest',
         result: 'A warm light engulfs you and you gain 35 hp',
         hp: 35,
-        gold: 0
+        jewels: 0
     }]
 };
 
