@@ -1,16 +1,22 @@
-
+import { createUser } from '../home/create-user.js';
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+test('test if creatUser is making a new user', (expect) => {
+    const expected = {
+        name: 'Tala',
+        id: 'mermaid',
+        hp: 35,
+        jewels: 0,
+        completed: {}
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    };
+
+    const userInfo = new FormData();
+    userInfo.set('name', 'Tala');
+    userInfo.set('magic', 'mermaid');
+
+    const actual = createUser(userInfo);
+
+   
+    expect.deepEqual(actual, expected);
 });
