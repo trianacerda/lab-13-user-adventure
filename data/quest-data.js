@@ -31,7 +31,8 @@ const witch = {
         id: 'run',
         description: 'just act like you forgot something and say, "hey what is THAT" and RUN!!!!!',
         result: `
-            you scurry away and as you think you're in the clear you trip over your shoelace.......BOOM you hit the ground and the witches snatch you up! Down 50 HP and NO jewels!.
+            you scurry away and as you think you're in the clear you trip over your shoelace.......
+            BOOM you hit the ground and the witches snatch you up! Down 50 HP and NO jewels!.
         `,
         hp: -50,
         jewels: 0
@@ -60,29 +61,20 @@ const mermaid = {
         hp: -5,
         jewels: 20
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'claim',
+        description: 'claim the house and make it yours!',
         result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
+            you attempted to take the house and you were EVICTED...fast. MINUS 45 and no jewels for you!
         `,
         hp: -45,
         jewels: 0
     }, {
-        id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
+        id: 'housewarming',
+        description: 'leave a house warming gift of thingamabobs',
         result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 jewels.
+            your gift was accepted with happiness! You earned 40 HP and 90 JEWELS!
         `,
-        hp: 0,
+        hp: 40,
         jewels: 90
     }]
 };
@@ -94,35 +86,28 @@ const genie = {
         top: '31%',
         left: '5%'
     },
-    prerequisites: ['dragon', 'monsters'],
     image: 'genie.jpeg',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        here is a genie in a bottle! what will you do?
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 jewels pieces!',
-        hp: 0,
+        id: 'rub',
+        description: 'rub the lamp!',
+        result: 'You grab 40 jewels pieces and 5 HP!',
+        hp: 5,
         jewels: 40
     }, {
-        id: 'jewelsen',
-        description: 'A jewelsen Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
+        id: 'walk',
+        description: 'walk away- it is NOT yours!',
+        result: 'you missed out on a chance for a wish or 3! MINUS 50 HP and NO jewels for you',
         hp: -50,
         jewels: 0
     }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 hp',
+        id: 'pass',
+        description: 'pick up the lamp and give it to someone else',
+        result: 'your kindness was rewarded 35 HP and 40 JEWELS!',
         hp: 35,
-        jewels: 0
+        jewels: 40
     }]
 };
 
@@ -133,3 +118,4 @@ const quests = [
 ];
 
 export default quests;
+
