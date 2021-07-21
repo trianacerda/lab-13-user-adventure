@@ -1,4 +1,4 @@
-function completedQuestSpans(quest){
+function completedQuest(quest){
     const span = document.createElement('span');
     span.classList.add('quest');
     span.classList.add('completed');
@@ -10,4 +10,4 @@ function completedQuestSpans(quest){
     return span;
 }
 
-export default completedQuestSpans;
+export default completedQuest;
