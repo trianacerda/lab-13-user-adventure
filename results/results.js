@@ -9,8 +9,9 @@ const jewels = gameUser.jewels;
 let story = `${gameUser.name} you have completed your adventure as a ${gameUser.id}. 
 You collected ${jewels} jewels and had ${hp} hp.`;
 
-storyDisplay.textContent = story;
 
 if (hp > 0){
-    st
+    storyDisplay.textContent = story;
+} else {
+    storyDisplay.textContent = 'sorry you lost--try again';
 }
