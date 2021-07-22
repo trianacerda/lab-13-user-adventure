@@ -1,6 +1,8 @@
 import quests from '../data/quest-data.js';
 import { findById } from '../data/findById.js';
-import { setLs, getLs } from '../data/storage-utils.js';
+import { setLs, getLs, loadProfile } from '../data/storage-utils.js';
+
+loadProfile();
 
 const searchParams = new URLSearchParams(window.location.search);
 

@@ -1,8 +1,9 @@
 import quests from '../data/quest-data.js';
-import { getLs } from '../data/storage-utils.js';
+import { getLs, loadProfile } from '../data/storage-utils.js';
 import { allCompletedQuests } from '../map/all-completed-quests.js';
 
 const gameUser = getLs();
+loadProfile();
 
 if (gameUser.hp <= 0 || allCompletedQuests(gameUser)){
     window.location.replace('../results');
